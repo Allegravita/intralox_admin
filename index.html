@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!-- Meta titles -->
+	<title>Intralox - home</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Meta titles -->
+
+	<!-- OG META's -->
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Intralox">
+	<meta property="og:description" content="">
+	<meta property="og:keywords" content="">
+	<meta property="og:locale" content="en_GB">
+	<meta property="og:site_name" content="Intralox">
+	<meta property="og:type" content="website">
+	<!-- OG META's -->
+
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Crtitical styles here -->
+	<link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+	<div class="main">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrap d-flex align-items-center">
+					<div class="header__left">
+						<ul class="header__links">
+							<li><a class="header__link" href="#">feedback</a></li>
+						</ul>
+					</div>
+
+					<div class="header__right d-flex align-items-center">
+						<div class="header__user-wrap">
+							<div class="header__user-icon d-flex">
+								<img src="./img/user.svg" alt="Intralox - user">
+
+								<i class="icon header__icon icon__down"></i>
+							</div>
+						</div>
+
+						<div class="header__logo">
+							<img src="./img/header_logo.svg" alt="Intralox - logo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="container d-flex">
+				<aside class="sidebar block">
+					<div class="title title--headline title--red sidebar__title">
+						ISC CAM Configuration
+					</div>
+
+					<nav class="sidebar__nav">
+						<a href="./index.html" class="btn btn--sidebar btn--with-icon sidebar__btn active">
+							<span class="icon btn__icon--big">
+								<img src="./img/live-info.svg" alt="Intralox - live info">
+							</span>
+
+							<span>live info</span>
+						</a>
+
+						<a href="./maintenance.html" class="btn btn--sidebar btn--with-icon sidebar__btn">
+							<span class="icon btn__icon--big">
+								<img src="./img/maintenance.svg" alt="Intralox - Maintenance">
+							</span>
+
+							<span>Maintenance</span>
+						</a>
+
+						<a href="./settings.html" class="btn btn--sidebar btn--with-icon sidebar__btn">
+							<span class="icon btn__icon--big">
+								<img src="./img/settings.svg" alt="Intralox - Settings">
+							</span>
+
+							<span>Settings</span>
+						</a>
+
+						<a href="./io-info.html" class="btn btn--sidebar btn--with-icon sidebar__btn">
+							<span class="icon btn__icon--big">
+								<img src="./img/io.svg" alt="Intralox - I/O">
+							</span>
+
+							<span>I/O</span>
+						</a>
+					</nav>
+				</aside>
+	
+				<div class="content block">
+					<div class="content__inner border--bottom">
+						<div class="title title--body content__title">System Information</div>
+					</div>
+
+					<div class="content__inner badgets border--bottom">
+						<div class="row">
+							<div class="col" style="width: 33%;">
+								<button style="width: 100%;" type="button" class="btn btn--small btn--badges btn--error btn--alert btn--round btn--right-icon">
+									<span>System Running</span>
+	
+									<i class="icon icon__small btn__icon--info"></i>
+								</button>
+							</div>
+
+							<div class="col" style="width: 33%;">
+								<button style="width: 100%;" type="button" class="btn btn--small btn--badges btn--success btn--checked btn--round btn--right-icon">
+									<span>Belt Running</span>
+	
+									<i class="icon icon__small btn__icon--info"></i>
+								</button>
+							</div>
+
+							<div class="col" style="width: 33%;">
+								<button style="width: 100%;" type="button" class="btn btn--small btn--badges btn--success btn--checked btn--round btn--right-icon">
+									<span>Belt Running</span>
+	
+									<i class="icon icon__small btn__icon--info"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="row mt-2">
+							<div class="col">
+								<div class="text--small text--gray text--robotocondensed mb">Run Time</div>
+									
+								<div class="text--default">0hh:mm:ss</div>
+							</div>
+
+							<div class="col">
+								<div class="text--small text--gray text--robotocondensed mb">Belt Cycles</div>
+									
+								<div class="text--default">0</div>
+							</div>
+
+							<div class="col">
+								<div class="text--small text--gray text--robotocondensed mb">Belt Speed</div>
+									
+								<div class="text--default">0m/min</div>
+							</div>
+
+							<div class="col">
+								<div class="text--small text--gray text--robotocondensed mb">Error Count</div>
+									
+								<div class="text--default">0</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="content__inner border--bottom">
+						<div class="title title--body content__title">Zone Information</div>
+
+						<div class="row align-items-center mt-2">
+							<div class="col" style="width: 11%;">
+								<div class="text--small text--default">Zone #X</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+
+								<div class="custom-checkbox">
+									<input type="checkbox" name="on-off" id="onOff-7">
+
+									<label for="onOff-7" class="d-flex custom-checkbox__btn">
+										<span class="custom-checkbox__on">
+											On
+											<i class="icon icon__check custom-checkbox__check"></i>
+										</span>
+										
+										<span class="custom-checkbox__off">Off</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+								<button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Test</button>
+							</div>
+
+							<div class="col" style="width: 14%;">
+								<div class="text--small text--default">Activations: 0</div>
+							</div>
+
+							<div class="col" style="width: 21%;">
+								<div class="text--small text--default">Average Per Minute: 0</div>
+							</div>
+						</div>
+
+						<div class="row align-items-center mt-2">
+							<div class="col" style="width: 11%;">
+								<div class="text--small text--default">Zone #X</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+
+								<div class="custom-checkbox">
+									<input type="checkbox" name="on-off" id="onOff-2">
+
+									<label for="onOff-2" class="d-flex custom-checkbox__btn">
+										<span class="custom-checkbox__on">
+											On
+											<i class="icon icon__check custom-checkbox__check"></i>
+										</span>
+										
+										<span class="custom-checkbox__off">Off</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+								<button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Test</button>
+							</div>
+
+							<div class="col" style="width: 14%;">
+								<div class="text--small text--default">Activations: 0</div>
+							</div>
+
+							<div class="col" style="width: 21%;">
+								<div class="text--small text--default">Average Per Minute: 0</div>
+							</div>
+						</div>
+
+						<div class="row align-items-center mt-2">
+							<div class="col" style="width: 11%;">
+								<div class="text--small text--default">Zone #X</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+
+								<div class="custom-checkbox">
+									<input type="checkbox" name="on-off" id="onOff-3">
+
+									<label for="onOff-3" class="d-flex custom-checkbox__btn">
+										<span class="custom-checkbox__on">
+											On
+											<i class="icon icon__check custom-checkbox__check"></i>
+										</span>
+										
+										<span class="custom-checkbox__off">Off</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+								<button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Test</button>
+							</div>
+
+							<div class="col" style="width: 14%;">
+								<div class="text--small text--default">Activations: 0</div>
+							</div>
+
+							<div class="col" style="width: 21%;">
+								<div class="text--small text--default">Average Per Minute: 0</div>
+							</div>
+						</div>
+
+						<div class="row align-items-center mt-2">
+							<div class="col" style="width: 11%;">
+								<div class="text--small text--default">Zone #X</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+
+								<div class="custom-checkbox">
+									<input type="checkbox" name="on-off" id="onOff-4">
+
+									<label for="onOff-4" class="d-flex custom-checkbox__btn">
+										<span class="custom-checkbox__on">
+											On
+											<i class="icon icon__check custom-checkbox__check"></i>
+										</span>
+										
+										<span class="custom-checkbox__off">Off</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+								<button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Test</button>
+							</div>
+
+							<div class="col" style="width: 14%;">
+								<div class="text--small text--default">Activations: 0</div>
+							</div>
+
+							<div class="col" style="width: 21%;">
+								<div class="text--small text--default">Average Per Minute: 0</div>
+							</div>
+						</div>
+
+						<div class="row align-items-center mt-2">
+							<div class="col" style="width: 11%;">
+								<div class="text--small text--default">Zone #X</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+
+								<div class="custom-checkbox">
+									<input type="checkbox" name="on-off" id="onOff-5">
+
+									<label for="onOff-5" class="d-flex custom-checkbox__btn">
+										<span class="custom-checkbox__on">
+											On
+											<i class="icon icon__check custom-checkbox__check"></i>
+										</span>
+										
+										<span class="custom-checkbox__off">Off</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+								<button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Test</button>
+							</div>
+
+							<div class="col" style="width: 14%;">
+								<div class="text--small text--default">Activations: 0</div>
+							</div>
+
+							<div class="col" style="width: 21%;">
+								<div class="text--small text--default">Average Per Minute: 0</div>
+							</div>
+						</div>
+
+						<div class="row align-items-center mt-2">
+							<div class="col" style="width: 11%;">
+								<div class="text--small text--default">Zone #X</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+
+								<div class="custom-checkbox">
+									<input type="checkbox" name="on-off" id="onOff-6">
+
+									<label for="onOff-6" class="d-flex custom-checkbox__btn">
+										<span class="custom-checkbox__on">
+											On
+											<i class="icon icon__check custom-checkbox__check"></i>
+										</span>
+										
+										<span class="custom-checkbox__off">Off</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+								<button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Test</button>
+							</div>
+
+							<div class="col" style="width: 14%;">
+								<div class="text--small text--default">Activations: 0</div>
+							</div>
+
+							<div class="col" style="width: 21%;">
+								<div class="text--small text--default">Average Per Minute: 0</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="content__inner mt-2">
+						<div class="row">
+							<div class="col" style="width: 19%;">
+								<div class="text--small text--gray mb">Default Destination</div>
+									
+								<span class="input-custom">
+									<input type="number" placeholder="0">
+
+									<i class="icon icon icon__small icon__save input-custom__icon"></i>
+								</span>
+							</div>
+
+							<div class="col" style="width: 22%;">
+								<div class="text--small text--gray mb">Destination Next Product</div>
+									
+								<div class="text--default">0</div>
+							</div>
+
+							<div class="col" style="width: 17%;">
+								<div class="text--small text--gray mb">Gap Error</div>
+									
+								<button type="button" class="btn btn--small btn--badges btn--success btn--checked btn--round btn--right-icon">
+									<span>No Error</span>
+	
+									<i class="icon icon__small btn__icon--info"></i>
+								</button>
+							</div>
+
+							<div class="col" style="width: 19%;">
+								<div class="text--small text--gray mb">Current Gap At Infeed</div>
+									
+								<div class="text--default">0</div>
+							</div>
+
+							<div class="col" style="width: 20%;">
+								<div class="text--small text--gray mb">Minimal Gap At Infeed</div>
+									
+								<div class="text--default">0m/min</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer d-flex">
+			<div class="container">
+				<div class="footer__wrap d-flex align-items-center">
+					<div class="footer__left">
+						<span class="text--small text--gray">© Intralox 2020</span>
+					</div>
+
+					<div class="footer__right">
+						<span class="text--small text--gray">SW Version v0.18 | DPE Model AIM S800</span>
+
+						<a href="#" class="text--small text--blue text--bold text--underline-none">Privacy Policy</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+<!-- Scripts -->
+<script src="./js/general.min.js"></script>
+
+</html>
