@@ -1,154 +1,140 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
    <div class="main">
       <header class="header">
-         <div class="container">
-            <div class="header__wrap d-flex align-items-center">
-               <div class="header__left">
-                  <ul class="header__links">
-                     <li><a class="header__link" href="#">feedback</a></li>
-                  </ul>
-               </div>
+   <div class="container">
+      <div class="header__wrap d-flex align-items-center">
+         <div class="header__left">
+            <ul class="header__links">
+               <li><a class="header__link" href="#">feedback</a></li>
+            </ul>
+         </div>
 
-               <div class="header__right d-flex align-items-center">
-                  <div class="header__user-icon d-flex">
-                     <img src="./img/user.svg">
+         <div class="header__right d-flex align-items-center">
+            <div class="header__user-icon d-flex">
+               <img src="./img/user.svg">
+            </div>
 
-                     <i class="icon header__icon icon__down"></i>
-                  </div>
-
-                  <div class="header__logo">
-                     <img src="./img/header_logo.svg">
-                  </div>
-               </div>
+            <div class="header__logo">
+               <img src="./img/header_logo.svg">
             </div>
          </div>
-      </header>
+      </div>
+   </div>
+</header>
 
       <main>
          <div class="container d-flex">
             <aside class="sidebar block">
-               <div class="title title--headline title--red sidebar__title">
-                  ISC CAM Configuration
-               </div>
+   <div class="title--headline text--error sidebar__title">
+      ISC CAM Configuration
+   </div>
 
-               <nav class="sidebar__nav">
-                  <a href="./index.html" class="btn btn--sidebar btn--with-icon sidebar__btn">
-                     <span class="icon btn__icon--big">
-                        <img src="./img/live-info.svg">
-                     </span>
+   <nav class="sidebar__nav">
+      <a href="./index.html" class="sidebar__btn active">
+         <span class="sidebar__icon">
+            <img src="./img/live-info.svg">
+         </span>
 
-                     <span>live info</span>
-                  </a>
+         <span>live info</span>
+      </a>
 
-                  <a href="./maintenance.html" class="btn btn--sidebar btn--with-icon sidebar__btn active">
-                     <span class="icon btn__icon--big">
-                        <img src="./img/maintenance.svg">
-                     </span>
+      <a href="./maintenance.html" class="sidebar__btn">
+         <span class="sidebar__icon">
+            <img src="./img/maintenance.svg">
+         </span>
 
-                     <span>Maintenance</span>
-                  </a>
+         <span>Maintenance</span>
+      </a>
 
-                  <a href="./settings.html" class="btn btn--sidebar btn--with-icon sidebar__btn">
-                     <span class="icon btn__icon--big">
-                        <img src="./img/settings.svg">
-                     </span>
+      <a href="./settings.html" class="sidebar__btn">
+         <span class="sidebar__icon">
+            <img src="./img/settings.svg">
+         </span>
 
-                     <span>Settings</span>
-                  </a>
+         <span>Settings</span>
+      </a>
 
-                  <a href="./io-info.html" class="btn btn--sidebar btn--with-icon sidebar__btn">
-                     <span class="icon btn__icon--big">
-                        <img src="./img/io.svg">
-                     </span>
+      <a href="./io-info.html" class="sidebar__btn">
+         <span class="sidebar__icon">
+            <img src="./img/io.svg">
+         </span>
 
-                     <span>I/O</span>
-                  </a>
-               </nav>
-            </aside>
+         <span>I/O</span>
+      </a>
+   </nav>
+</aside>
 
             <div class="content block">
                <div class="content__inner border--bottom">
-                  <div class="title title--body content__title">
+                  <div class="title--body">
                      Maintenance Information
                   </div>
                </div>
 
                <div class="content__inner border--bottom">
                   <div class="row">
-                     <div class="col">
-                        <div class="text--small text--gray mb">
+                     <div class="col col-2">
+                        <div class="text--small mb">
                            PE Distance (mm)
                         </div>
 
-                        <span class="input-custom">
-                           <input type="number" placeholder="0" />
-
-                           <i class="icon icon icon__small icon__save input-custom__icon"></i>
-                        </span>
+                        <div  class="input input--save">
+									<input type="number" placeholder="0">
+									<span class="input__save"></span>
+								</div>
                      </div>
 
-                     <div class="col d-flex align-items-center">
-                        <div style="padding-right: 0.625rem">
-                           <div class="text--small text--gray mb">
+                     <div class="col d-flex align-items-start">
+                        <div class="pr-1">
+                           <div class="text--small mb">
                               Belt Cycles
                            </div>
 
-                           <div class="text--default">0</div>
+                           <div>0</div>
                         </div>
 
-                        <div>
-                           <button type="button"
-                              class="btn btn--bold btn--small btn--border-blue btn--round btn--right-icon">
-                              <span>Reset</span>
-
-                              <i class="icon icon__small icon__reset"></i>
-                           </button>
-                        </div>
+                        <button type="button" class="btn btn--refresh">
+                           Reset
+                        </button>
                      </div>
 
-                     <div class="col d-flex align-items-center">
-                        <div style="padding-right: 0.625rem">
-                           <div class="text--small text--gray mb">
+                     <div class="col d-flex align-items-start">
+                        <div class="pr-1">
+                           <div class="text--small mb">
                               Run Time
                            </div>
 
-                           <div class="text--default">0</div>
+                           <div>0</div>
                         </div>
 
-                        <div>
-                           <button type="button"
-                              class="btn btn--bold btn--small btn--border-blue btn--round btn--right-icon">
-                              <span>Reset</span>
-
-                              <i class="icon icon__small icon__reset"></i>
-                           </button>
-                        </div>
+                        <button type="button" class="btn btn--refresh">
+                           Reset
+                        </button>
                      </div>
 
-                     <div class="col d-flex align-items-center">
-                        <div style="padding-right: 0.625rem">
-                           <div class="text--small text--gray mb">
+                     <div class="col d-flex align-items-start">
+                        <div class="pr-1">
+                           <div class="text--small mb">
                               Activation Counters
                            </div>
 
-                           <div class="text--default">0</div>
+                           <div>0</div>
                         </div>
 
-                        <div>
-                           <button type="button"
-                              class="btn btn--bold btn--small btn--border-blue btn--round btn--right-icon">
-                              <span>Reset</span>
-
-                              <i class="icon icon__small icon__reset"></i>
-                           </button>
-                        </div>
+                        <button type="button" class="btn btn--refresh">
+                           Reset
+                        </button>
                      </div>
                   </div>
                </div>
@@ -156,27 +142,27 @@
                <div class="content__inner">
                   <div class="row mt-1">
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Localtion Zone #x
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">mm</span>
+                        <span class="text">mm</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Delay
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">ms</span>
+                        <span class="text">ms</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
@@ -194,38 +180,33 @@
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <button type="button"
-                           class="btn btn--small btn--badges btn--success btn--round btn--right-icon">
-                           <span>Enabled</span>
-
-                           <i class="icon icon__small"></i>
-                        </button>
+                        <div class="status status--success">Enable</div>
                      </div>
                   </div>
 
                   <div class="row mt-1">
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Localtion Zone #x
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">mm</span>
+                        <span class="text">mm</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Delay
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">ms</span>
+                        <span class="text">ms</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
@@ -243,38 +224,33 @@
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <button type="button"
-                        class="btn btn--small btn--badges btn--success btn--round btn--right-icon">
-                           <span>Enabled</span>
-
-                           <i class="icon icon__small"></i>
-                        </button>
+                        <div class="status status--success">Enable</div>
                      </div>
                   </div>
 
                   <div class="row mt-1">
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Localtion Zone #x
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">mm</span>
+                        <span class="text">mm</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Delay
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">ms</span>
+                        <span class="text">ms</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
@@ -292,38 +268,33 @@
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <button type="button"
-                           class="btn btn--small btn--badges btn--success btn--round btn--right-icon">
-                           <span>Enabled</span>
-
-                           <i class="icon icon__small"></i>
-                        </button>
+                        <div class="status status--success">Enable</div>
                      </div>
                   </div>
 
                   <div class="row mt-1">
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Localtion Zone #x
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">mm</span>
+                        <span class="text">mm</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Delay
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">ms</span>
+                        <span class="text">ms</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
@@ -341,38 +312,33 @@
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <button type="button"
-                           class="btn btn--small btn--badges btn--success btn--round btn--right-icon">
-                           <span>Enabled</span>
-
-                           <i class="icon icon__small"></i>
-                        </button>
+                        <div class="status status--success">Enable</div>
                      </div>
                   </div>
 
                   <div class="row mt-1">
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Localtion Zone #x
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">mm</span>
+                        <span class="text">mm</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Delay
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">ms</span>
+                        <span class="text">ms</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
@@ -390,38 +356,33 @@
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <button type="button"
-                           class="btn btn--small btn--badges btn--success btn--round btn--right-icon">
-                           <span>Enabled</span>
-
-                           <i class="icon icon__small"></i>
-                        </button>
+                        <div class="status status--success">Enable</div>
                      </div>
                   </div>
 
                   <div class="row mt-1">
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Localtion Zone #x
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">mm</span>
+                        <span class="text">mm</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Delay
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">ms</span>
+                        <span class="text">ms</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
@@ -439,38 +400,33 @@
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <button type="button"
-                           class="btn btn--small btn--badges btn--success btn--round btn--right-icon">
-                           <span>Enabled</span>
-
-                           <i class="icon icon__small"></i>
-                        </button>
+                        <div class="status status--success">Enable</div>
                      </div>
                   </div>
 
                   <div class="row mt-1">
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Localtion Zone #x
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">mm</span>
+                        <span class="text">mm</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Delay
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">ms</span>
+                        <span class="text">ms</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
@@ -488,38 +444,33 @@
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <button type="button"
-                           class="btn btn--small btn--badges btn--success btn--round btn--right-icon">
-                           <span>Enabled</span>
-
-                           <i class="icon icon__small"></i>
-                        </button>
+                        <div class="status status--success">Enable</div>
                      </div>
                   </div>
 
                   <div class="row mt-1">
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Localtion Zone #x
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">mm</span>
+                        <span class="text">mm</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <div class="text--small text--default" style="margin-right: 0.625rem">
+                        <div class="text mr-1">
                            Delay
                         </div>
 
-                        <div class="input-custom input-custom--text-right" style="width: 6.8125rem">
+                        <div class="input input__table mr-1">
                            <input type="number" placeholder="80" />
                         </div>
 
-                        <span style="margin-left: 0.625rem" class="text text--small text--default">ms</span>
+                        <span class="text">ms</span>
                      </div>
 
                      <div class="col d-flex align-items-center">
@@ -537,19 +488,14 @@
                      </div>
 
                      <div class="col d-flex align-items-center">
-                        <button type="button"
-                           class="btn btn--small btn--badges btn--success btn--round btn--right-icon">
-                           <span>Enabled</span>
-
-                           <i class="icon icon__small"></i>
-                        </button>
+                        <div class="status status--success">Enable</div>
                      </div>
                   </div>
                </div>
 
                <div class="content__inner">
-                  <div>
-                     <button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Submit This Info</button>
+                  <div class="col col-4">
+                     <button type="button" class="btn btn--blue">Submit This Info</button>
                   </div>
                </div>
             </div>
@@ -557,20 +503,21 @@
       </main>
 
       <footer class="footer d-flex">
-         <div class="container">
-            <div class="footer__wrap d-flex align-items-center">
-               <div class="footer__left">
-                  <span class="text--small text--gray">© Intralox 2020</span>
-               </div>
-
-               <div class="footer__right">
-                  <span class="text--small text--gray">SW Version v0.18 | DPE Model AIM S800</span>
-
-                  <a href="#" class="text--small text--blue text--bold text--underline-none">Privacy Policy</a>
-               </div>
-            </div>
+   <div class="container">
+      <div class="footer__wrap d-flex align-items-center">
+         <div class="footer__left">
+            <span class="text--small">© Intralox 2020</span>
          </div>
-      </footer>
+
+         <div class="footer__right">
+            <span class="text--small">SW Version v0.18 | DPE Model AIM S800</span>
+
+            <a href="#" class="text--small text--blue text--bold text--underline-none">Privacy Policy</a>
+         </div>
+      </div>
+   </div>
+</footer>
    </div>
 </body>
+
 </html>

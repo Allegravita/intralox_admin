@@ -1,143 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
 	<div class="main">
 		<header class="header">
-			<div class="container">
-				<div class="header__wrap d-flex align-items-center">
-					<div class="header__left">
-						<ul class="header__links">
-							<li><a class="header__link" href="#">feedback</a></li>
-						</ul>
-					</div>
+   <div class="container">
+      <div class="header__wrap d-flex align-items-center">
+         <div class="header__left">
+            <ul class="header__links">
+               <li><a class="header__link" href="#">feedback</a></li>
+            </ul>
+         </div>
 
-					<div class="header__right d-flex align-items-center">
-						<div class="header__user-icon d-flex">
-							<img src="./img/user.svg">
+         <div class="header__right d-flex align-items-center">
+            <div class="header__user-icon d-flex">
+               <img src="./img/user.svg">
+            </div>
 
-							<i class="icon header__icon icon__down"></i>
-						</div>
-
-						<div class="header__logo">
-							<img src="./img/header_logo.svg">
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+            <div class="header__logo">
+               <img src="./img/header_logo.svg">
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
 
 		<main>
 			<div class="container d-flex">
 				<aside class="sidebar block">
-					<div class="title title--headline title--red sidebar__title">
-						ISC CAM Configuration
-					</div>
+   <div class="title--headline text--error sidebar__title">
+      ISC CAM Configuration
+   </div>
 
-					<nav class="sidebar__nav">
-						<a href="./index.html" class="btn btn--sidebar btn--with-icon sidebar__btn active">
-							<span class="icon btn__icon--big">
-								<img src="./img/live-info.svg">
-							</span>
+   <nav class="sidebar__nav">
+      <a href="./index.html" class="sidebar__btn active">
+         <span class="sidebar__icon">
+            <img src="./img/live-info.svg">
+         </span>
 
-							<span>live info</span>
-						</a>
+         <span>live info</span>
+      </a>
 
-						<a href="./maintenance.html" class="btn btn--sidebar btn--with-icon sidebar__btn">
-							<span class="icon btn__icon--big">
-								<img src="./img/maintenance.svg">
-							</span>
+      <a href="./maintenance.html" class="sidebar__btn">
+         <span class="sidebar__icon">
+            <img src="./img/maintenance.svg">
+         </span>
 
-							<span>Maintenance</span>
-						</a>
+         <span>Maintenance</span>
+      </a>
 
-						<a href="./settings.html" class="btn btn--sidebar btn--with-icon sidebar__btn">
-							<span class="icon btn__icon--big">
-								<img src="./img/settings.svg">
-							</span>
+      <a href="./settings.html" class="sidebar__btn">
+         <span class="sidebar__icon">
+            <img src="./img/settings.svg">
+         </span>
 
-							<span>Settings</span>
-						</a>
+         <span>Settings</span>
+      </a>
 
-						<a href="./io-info.html" class="btn btn--sidebar btn--with-icon sidebar__btn">
-							<span class="icon btn__icon--big">
-								<img src="./img/io.svg">
-							</span>
+      <a href="./io-info.html" class="sidebar__btn">
+         <span class="sidebar__icon">
+            <img src="./img/io.svg">
+         </span>
 
-							<span>I/O</span>
-						</a>
-					</nav>
-				</aside>
+         <span>I/O</span>
+      </a>
+   </nav>
+</aside>
 	
 				<div class="content block">
 					<div class="content__inner border--bottom">
-						<div class="title title--body content__title">System Information</div>
+						<div class="title--body">System Information</div>
 					</div>
 
 					<div class="content__inner badgets border--bottom">
 						<div class="row">
-							<div class="col" style="max-width: 13.1875rem; width: 100%;">
-								<button style="width: 100%;" type="button" class="btn btn--small btn--badges btn--error btn--round btn--right-icon">
-									<span>System Running</span>
-	
-									<i class="icon icon__small"></i>
-								</button>
+							<div class="col col-3">
+								<div class="status status--danger">
+									System Running
+								</div>
 							</div>
 
-							<div class="col" style="max-width: 13.1875rem; width: 100%;">
-								<button style="width: 100%;" type="button" class="btn btn--small btn--badges btn--success btn--round btn--right-icon">
-									<span>Belt Running</span>
-	
-									<i class="icon icon__small"></i>
-								</button>
+							<div class="col col-3">
+								<div class="status status--success">
+									Belt Running
+								</div>
 							</div>
 
-							<div class="col" style="max-width: 13.1875rem; width: 100%;">
-								<button style="width: 100%;" type="button" class="btn btn--small btn--badges btn--warning btn--round btn--right-icon">
-									<span>Infeed Sensor Clear</span>
-	
-									<i class="icon icon__small"></i>
-								</button>
+							<div class="col col-3">
+								<div class="status status--alert">
+									Belt Running
+								</div>
 							</div>
 						</div>
 
 						<div class="row mt-2">
 							<div class="col">
-								<div class="text--small text--gray text--robotocondensed mb">Run Time</div>
+								<div class="text--small mb">Run Time</div>
 									
-								<div class="text--default">0hh:mm:ss</div>
+								<div>0hh:mm:ss</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--gray text--robotocondensed mb">Belt Cycles</div>
+								<div class="text--small mb">Belt Cycles</div>
 									
-								<div class="text--default">0</div>
+								<div>0</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--gray text--robotocondensed mb">Belt Speed</div>
+								<div class="text--small mb">Belt Speed</div>
 									
-								<div class="text--default">0m/min</div>
+								<div>0m/min</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--gray text--robotocondensed mb">Error Count</div>
+								<div class="text--small mb">Error Count</div>
 									
-								<div class="text--default">0</div>
+								<div>0</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="content__inner border--bottom">
-						<div class="title title--body content__title">Zone Information</div>
+						<div class="title--body">Zone Information</div>
 
 						<div class="row align-items-center mt-1">
 							<div class="col">
-								<div class="text--small text--default">Zone #X</div>
+								<div class="text">Zone #X</div>
 							</div>
 
 							<div class="col">
@@ -156,21 +152,21 @@
 							</div>
 
 							<div class="col">
-								<button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Test</button>
+								<button type="button" class="btn btn--blue">Test</button>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--default">Activations: 0</div>
+								<div class="text">Activations: 0</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--default">Average Per Minute: 0</div>
+								<div class="text">Average Per Minute: 0</div>
 							</div>
 						</div>
 
 						<div class="row align-items-center mt-1">
 							<div class="col">
-								<div class="text--small text--default">Zone #X</div>
+								<div class="text">Zone #X</div>
 							</div>
 
 							<div class="col">
@@ -189,21 +185,21 @@
 							</div>
 
 							<div class="col">
-								<button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Test</button>
+								<button type="button" class="btn btn--blue">Test</button>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--default">Activations: 0</div>
+								<div class="text">Activations: 0</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--default">Average Per Minute: 0</div>
+								<div class="text">Average Per Minute: 0</div>
 							</div>
 						</div>
 
 						<div class="row align-items-center mt-1">
 							<div class="col">
-								<div class="text--small text--default">Zone #X</div>
+								<div class="text">Zone #X</div>
 							</div>
 
 							<div class="col">
@@ -222,21 +218,21 @@
 							</div>
 
 							<div class="col">
-								<button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Test</button>
+								<button type="button" class="btn btn--blue">Test</button>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--default">Activations: 0</div>
+								<div class="text">Activations: 0</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--default">Average Per Minute: 0</div>
+								<div class="text">Average Per Minute: 0</div>
 							</div>
 						</div>
 
 						<div class="row align-items-center mt-1">
 							<div class="col">
-								<div class="text--small text--default">Zone #X</div>
+								<div class="text">Zone #X</div>
 							</div>
 
 							<div class="col">
@@ -255,21 +251,21 @@
 							</div>
 
 							<div class="col">
-								<button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Test</button>
+								<button type="button" class="btn btn--blue">Test</button>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--default">Activations: 0</div>
+								<div class="text">Activations: 0</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--default">Average Per Minute: 0</div>
+								<div class="text">Average Per Minute: 0</div>
 							</div>
 						</div>
 
 						<div class="row align-items-center mt-1">
 							<div class="col">
-								<div class="text--small text--default">Zone #X</div>
+								<div class="text">Zone #X</div>
 							</div>
 
 							<div class="col">
@@ -288,21 +284,21 @@
 							</div>
 
 							<div class="col">
-								<button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Test</button>
+								<button type="button" class="btn btn--blue">Test</button>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--default">Activations: 0</div>
+								<div class="text">Activations: 0</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--default">Average Per Minute: 0</div>
+								<div class="text">Average Per Minute: 0</div>
 							</div>
 						</div>
 
 						<div class="row align-items-center mt-1">
 							<div class="col">
-								<div class="text--small text--default">Zone #X</div>
+								<div class="text">Zone #X</div>
 							</div>
 
 							<div class="col">
@@ -321,57 +317,54 @@
 							</div>
 
 							<div class="col">
-								<button type="button" class="btn btn--big btn--round btn--bold btn--blue justify-content-center">Test</button>
+								<button type="button" class="btn btn--blue">Test</button>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--default">Activations: 0</div>
+								<div class="text">Activations: 0</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--default">Average Per Minute: 0</div>
+								<div class="text">Average Per Minute: 0</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="content__inner mt-2">
 						<div class="row">
-							<div class="col" style="max-width: 9.0625rem; width:100%;">
-								<div class="text--small text--gray mb">Default Destination</div>
+							<div class="col col-2">
+								<div class="text--small mb">Default Destination</div>
 									
-								<span class="input-custom">
+								<div  class="input input--save">
 									<input type="number" placeholder="0">
-
-									<i class="icon icon icon__small icon__save input-custom__icon"></i>
-								</span>
+									<span class="input__save"></span>
+								</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--gray mb">Destination Next Product</div>
+								<div class="text--small mb">Destination Next Product</div>
 									
-								<div class="text--default">0</div>
+								<div>0</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--gray mb">Gap Error</div>
+								<div class="text--small mb">Gap Error</div>
 									
-								<button type="button" class="btn btn--small btn--badges btn--success btn--round btn--right-icon">
-									<span>No Error</span>
-	
-									<i class="icon icon__small"></i>
-								</button>
+								<div class="status status--success">
+									No Error
+								</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--gray mb">Current Gap At Infeed</div>
+								<div class="text--small mb">Current Gap At Infeed</div>
 									
-								<div class="text--default">0</div>
+								<div >0</div>
 							</div>
 
 							<div class="col">
-								<div class="text--small text--gray mb">Minimal Gap At Infeed</div>
+								<div class="text--small mb">Minimal Gap At Infeed</div>
 									
-								<div class="text--default">0m/min</div>
+								<div>0m/min</div>
 							</div>
 						</div>
 					</div>
@@ -380,20 +373,21 @@
 		</main>
 
 		<footer class="footer d-flex">
-			<div class="container">
-				<div class="footer__wrap d-flex align-items-center">
-					<div class="footer__left">
-						<span class="text--small text--gray">© Intralox 2020</span>
-					</div>
+   <div class="container">
+      <div class="footer__wrap d-flex align-items-center">
+         <div class="footer__left">
+            <span class="text--small">© Intralox 2020</span>
+         </div>
 
-					<div class="footer__right">
-						<span class="text--small text--gray">SW Version v0.18 | DPE Model AIM S800</span>
+         <div class="footer__right">
+            <span class="text--small">SW Version v0.18 | DPE Model AIM S800</span>
 
-						<a href="#" class="text--small text--blue text--bold text--underline-none">Privacy Policy</a>
-					</div>
-				</div>
-			</div>
-		</footer>
+            <a href="#" class="text--small text--blue text--bold text--underline-none">Privacy Policy</a>
+         </div>
+      </div>
+   </div>
+</footer>
 	</div>
 </body>
+
 </html>
